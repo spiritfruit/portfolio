@@ -1,0 +1,22 @@
+---
+import Layout from '../layouts/Layout.astro';
+import { getCollection } from 'astro:content';
+
+const projects = await getCollection('projects');
+---
+
+<Layout title="My Portfolio">
+  <h1>Hello, it's me!</h1>
+  <p>This is my portfolio, live on the internet for free.</p>
+
+  <section class="projects">
+    <h2>Projects ({projects.length})</h2>
+    <ul>
+      {projects.map((project) => (
+        <li>
+          <strong>{project.data.title}</strong> — {project.data.description}
+        </li>
+      ))}
+    </ul>
+  </section>
+</Layout>
