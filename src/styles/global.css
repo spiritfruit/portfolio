@@ -4,33 +4,18 @@ body {
   background: #f7f7f5;
   color: #1a1a1a;
   min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-}
-
-.site-nav {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding: 1rem 2rem;
-}
-
-.site-nav__links {
-  list-style: none;
-  display: flex;
-  gap: 1.5rem;
-  margin: 0;
-  padding: 0;
 }
 
 main {
-  flex: 1;
+  min-height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   text-align: center;
   padding: 2rem;
+  max-width: 40rem;
+  margin: 0 auto;
 }
 
 h1 {
@@ -38,14 +23,6 @@ h1 {
   margin-bottom: 0.5rem;
 }
 
-.projects {
-  margin-top: 2rem;
-  text-align: left;
-}
-
-.site-footer {
-  text-align: center;
-  padding: 1.5rem;
-  font-size: 0.875rem;
-  color: #666;
+a {
+  color: inherit;
 }
